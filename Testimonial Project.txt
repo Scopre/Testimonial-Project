@@ -1,0 +1,232 @@
+<!DOCTYPE Html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonial Cards</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Container for the first row */
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* Individual testimonial cards */
+  .testimonial-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .testimonial-card img.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+  .testimonial-card h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+  }
+
+  .testimonial-card h4 {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    margin: 0 0 15px;
+  }
+
+  .rating {
+    color: #f4b400;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  /* Navigation styles */
+  .navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .navigation img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  .navigation img.active {
+    border-color: #007bff;
+  }
+/* Slider styles */
+  .slider-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider .slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slider .slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid transparent;
+  }
+
+  .slider img.active {
+    border-color: #007bff;
+  }
+
+  /* Slider navigation */
+  .slider .nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .slider .nav-arrow.left {
+    left: 10px;
+  }
+
+  .slider .nav-arrow.right {
+    right: 10px;
+  }
+</style>
+</head>
+
+<body>
+  <!-- First row: Two testimonial cards -->
+  <div class="row">
+    <div class="testimonial-card">
+      <p>I have been solving all the project ideas on roadmap.sh and I am surprised how far I have come from where I started.</p>
+      <p><strong>Highly recommended!</strong></p>
+      <img src="C:/Users/USER/Desktop/Programming Class/Testimonial Card/my pict.jpg" alt="Adewuyi Adewale" class="profile">
+      <h2>Adewuyi Adewale</h2>
+      <h4>Junior Frontend Developer</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>Since starting my career in 2021, I have only followed one resource, roadmap.sh, it truly helped me go from 0 to having a job and changing the financial trajectory of my family.</p>
+      <img src="C:/Users/USER/Desktop/Programming Class/Testimonial Card/my pict.jpg" alt="Adewuyi Adewale" class="profile">
+      <h2>Adewuyi Adewale</h2>
+      <h4>Junior Frontend Developer</h4>
+    </div>
+  </div>
+
+  <!-- Second row: One centered testimonial card -->
+  <div class="row" style="justify-content: center;">
+    <div class="image-container">
+     <img 
+  src="C:/Users/USER/Desktop/Programming Class/Testimonial Card/my pict.jpg" 
+  alt="Adewuyi Adewale" 
+  style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    </div>
+    <div class="testimonial-card">
+      <div class="rating">★★★★★</div>
+      <p>I find myself recommending roadmap.sh to all the internees or junior developers. It's a great way to skill up and grow in your career.</p>
+      <h2>Adewuyi Adewale</h2>
+      <h4>Engineering Manager</h4>
+    </div>
+  </div>
+
+  <!-- Third row: Another testimonial card -->
+  <div class="row" style="justify-content: center;">
+    <div class="testimonial-card">
+      <p>roadmap.sh is an incredible resource. I was fortunate to discover it during my university days in 2018. Back then, it was just a single repository with three images. It's amazing to see how much impact it has had on millions of lives since then.</p>
+      <p>Highly recommended!</p>
+      <img src="C:/Users/USER/Desktop/Programming Class/Testimonial Card/my pict.jpg" alt="Adewuyi Adewale" class="profile">
+      <h2>Adewuyi Adewale</h2>
+    </div>
+  </div>
+
+ <!-- Fourth row: Slider -->
+  <div class="row full-width">
+    <div class="slider-container">
+      <div class="slider">
+        <button class="nav-arrow left" onclick="moveSlide(-1)">&#8592;</button>
+        <div class="slides">
+          <div class="slide"><img src="C:/Users/USER/Desktop/Programming Class/Testimonial Card/my pict.jpg" alt="Slide 1"></div>
+          <div class="slide"><img src="C:/Users/USER/Desktop/Programming Class/Testimonial Card/my pict.jpg" alt="Slide 2"></div>
+          <div class="slide"><img src="C:/Users/USER/Desktop/Programming Class/Testimonial Card/my pict.jpg" alt="Slide 3"></div>
+          <div class="slide"><img src="C:/Users/USER/Desktop/Programming Class/Testimonial Card/my pict.jpg" alt="Slide 4"></div>
+        </div>
+        <button class="nav-arrow right" onclick="moveSlide(1)">&#8594;</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+
+    function moveSlide(direction) {
+      const slides = document.querySelector('.slides');
+      const totalSlides = slides.children.length;
+
+      currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  </script>
+</body>
+</html>
